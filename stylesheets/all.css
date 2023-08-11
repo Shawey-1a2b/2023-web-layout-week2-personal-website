@@ -59,6 +59,7 @@ table {
 body {
   font-family: Bruno Ace SC;
   line-height: 150%;
+  color: var(#ffffff);
 }
 
 img {
@@ -86,6 +87,14 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+.container {
+  width: 81rem;
+}
+
+.text-dark {
+  color: --var(#000000);
 }
 
 .d-flex {
