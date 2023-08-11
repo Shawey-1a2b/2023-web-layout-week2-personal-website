@@ -1,2 +1,4 @@
-@import url(./reset.scss);
-$primary: white;
+@import 'variables';
+@import 'reset';
+@import 'base';
+@import 'utilities';

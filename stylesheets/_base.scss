@@ -1,0 +1,28 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body {
+    font-family: Bruno Ace SC;
+    line-height: 150%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+}
+h1 {
+    font-size: 8rem;
+}
+h2, .h2 {
+    font-size: 4rem;
+}
+.fs-1 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+}
