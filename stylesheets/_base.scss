@@ -4,13 +4,17 @@
 body {
     font-family: Bruno Ace SC;
     line-height: 150%;
-    color: var($primary);
+    color: $primary;
+    background-color: $secondary;
 }
 img {
     max-width: 100%;
     height: auto;
     display: block;
     vertical-align: middle;
+}
+a {
+    text-decoration: none;
 }
 h1 {
     font-size: 8rem;
@@ -24,12 +28,13 @@ h2, .h2 {
 h3 {
     font-size: 1.25rem;
 }
-p {
+p, p {
     font-size: 1rem;
 }
 .container{
     width: 81rem;
+    margin: 0 auto;
 }
 .text-dark{
-    color: --var($secondary);
+    color: $secondary;
 }

@@ -59,7 +59,8 @@ table {
 body {
   font-family: Bruno Ace SC;
   line-height: 150%;
-  color: var(#ffffff);
+  color: #ffffff;
+  background-color: #000000;
 }
 
 img {
@@ -67,6 +68,10 @@ img {
   height: auto;
   display: block;
   vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -85,16 +90,17 @@ h3 {
   font-size: 1.25rem;
 }
 
-p {
+p, p {
   font-size: 1rem;
 }
 
 .container {
   width: 81rem;
+  margin: 0 auto;
 }
 
 .text-dark {
-  color: --var(#000000);
+  color: #000000;
 }
 
 .d-flex {
@@ -109,11 +115,11 @@ p {
   flex-wrap: wrap;
 }
 
-.mt {
+.mt-2_5 {
   margin-top: 2.5rem;
 }
 
-.mb {
+.mb-2_5 {
   margin-bottom: 2.5rem;
 }
 
