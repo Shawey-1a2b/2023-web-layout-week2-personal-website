@@ -25,43 +25,49 @@
                 <p class="h2">Hi</p>
                 <p class="h2">I’m a front-end developer</p>
                 <h1 class="text-end">William</h1>
-                <p class="btn-light">contact me<img src="./image/arrow_outward.png"></p>
+<!-- 　　待解決ｂｔｎ無法置右問題 -->
+                <p class="btn-light d-flex justify-content-end">contact me<img src="./image/arrow_outward.png"></p>
             </div>
         </div>
     </div>
     <div class="introduction">
-        <div class="container">
+        <div class="container py-10 d-flex  justify-content-between">
             <div class="introduction-description">
-                <h2>Introduction</h2>
-                <div class="fs1">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</div>
-                <div class="introduction-deco-sparkle">
-                    <img src="/image/sparkle-sm.png" alt="sparkle decoration"><img src="/image/sparkle-sm.png" alt="sparkle decoration"><img src="/image/sparkle-sm.png" alt="sparkle decoration">
+                <h2 class="mb-0_25">Introduction</h2>
+                <p class="fs1 my-2">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+                <div class="introduction-deco-sparkle d-flex">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
                 </div>
-            <div class="introduction-album">
-            <img src="./image/sparkle.png" alt="sparkle decoration">
-            <a href="https://unsplash.com/" target="_blank"><img src="./image/photographer.png" alt="my photograph works"></a>
-            <a href="https://unsplash.com/s/photos/portrait" target="_blank"><img src="./image/people-2.png" alt="my portrait photography works"><a>
             </div>
+            <img src="./image/sparkle.png" alt="sparkle decoration">
+            <img src="./image/photographer.png" alt="my photograph works">
+            <img src="./image/people-2.png" alt="my portrait photography works">
+            <!-- <img src="./image/sparkle.png" alt="sparkle decoration">
+            <a href="https://unsplash.com/" target="_blank"><img src="./image/photographer.png" alt="my photograph works"></a>
+            <a href="https://unsplash.com/s/photos/portrait" target="_blank"><img src="./image/people-2.png" alt="my portrait photography works"><a> -->
+        </div>
     </div>
-    <div class="about">
-        <div class="container">
-            <ul class="about-card-box">
-                <li>
+    <div class="about light-theme">
+        <div class="container py-10">
+            <ul class="about-card-box d-flex">
+                <li class="about-card">
                     <p class="h3">01</p>
                     <h3>Attention to Detail</h3>
                     <p>Meticulous code analysis and optimization.</p>
                 </li>
-                <li>
+                <li class="about-card">
                     <p class="h3">02</p>
                     <h3>Adaptability</h3>
                     <p>Swift learning of new technologies.</p>
                 </li>
-                <li>
+                <li class="about-card">
                     <p class="h3">03</p>
                     <h3>Problem Solver</h3>
                     <p>Identifying and resolving issues.</p>
                 </li>
-                <li>
+                <li class="about-card">
                     <p class="h3">04</p>
                     <h3>Team Player</h3>
                     <p>Collaborates and shares ideas.</p>
@@ -82,7 +88,7 @@
             </ul>
         </div>
     </div>
-    <div class="project">
+    <div class="project light-theme">
         <div class="container">
             <h2>My Projects</h2>
             <img src="./image/Rectangle 10.png" alt="my project work no.10">

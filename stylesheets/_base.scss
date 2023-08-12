@@ -7,6 +7,10 @@ body {
     line-height: 1.5;
     color: $primary;
     background-color: $secondary;
+    & .light-theme{
+        color: $secondary;
+        background: $primary;
+    }
 }
 img {
     max-width: 100%;
@@ -28,7 +32,7 @@ h2, .h2 {
 .fs-1 {
     font-size: 1.5rem;
 }
-h3 {
+h3, .h3 {
     font-size: 1.25rem;
 }
 p, .p {
@@ -41,6 +45,15 @@ p, .p {
 }
 .banner-description{
     width: 39.75rem;
+}
+.introduction-description{
+    width: 32.875rem;
+}
+.about-card-box{
+    width: 39.75rem;
+}
+.about-card{
+    width: 17.125rem;
 }
 /* font */
 .text-end{
