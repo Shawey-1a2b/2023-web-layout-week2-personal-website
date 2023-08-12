@@ -1,12 +1,18 @@
-.d-flex{
+/* flex */ 
+.d-flex {
     display: flex;
 }
-.justify-content-between{
+.justify-content-between {
     justify-content: space-between;
 }
-.flex-wrap{
+.align-items-center {
+    align-items: center;
+}
+.flex-wrap {
     flex-wrap: wrap;
 }
+
+/* spacing */
 .mt-2_5 {
     margin-top: 2.5rem;
 }

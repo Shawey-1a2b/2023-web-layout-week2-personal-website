@@ -1,9 +1,10 @@
 *, *:before, *:after{
     box-sizing: border-box;
+    outline: solid 1px grey; /*檢查用，繳交前需清掉*/
 }
 body {
     font-family: Bruno Ace SC;
-    line-height: 150%;
+    line-height: 1.5;
     color: $primary;
     background-color: $secondary;
 }
@@ -15,9 +16,11 @@ img {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 h1 {
     font-size: 8rem;
+    color: $green;
 }
 h2, .h2 {
     font-size: 4rem;
@@ -28,12 +31,20 @@ h2, .h2 {
 h3 {
     font-size: 1.25rem;
 }
-p, p {
+p, .p {
     font-size: 1rem;
 }
+/* containers */
 .container{
     width: 81rem;
     margin: 0 auto;
+}
+.banner-description{
+    width: 39.75rem;
+}
+/* font */
+.text-end{
+    text-align: right;
 }
 .text-dark{
     color: $secondary;

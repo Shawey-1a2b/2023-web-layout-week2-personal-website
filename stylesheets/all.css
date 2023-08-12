@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,11 +55,12 @@ table {
 
 *, *:before, *:after {
   box-sizing: border-box;
+  outline: solid 1px grey; /*檢查用，繳交前需清掉*/
 }
 
 body {
   font-family: Bruno Ace SC;
-  line-height: 150%;
+  line-height: 1.5;
   color: #ffffff;
   background-color: #000000;
 }
@@ -72,10 +74,12 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1 {
   font-size: 8rem;
+  color: #00FFA3;
 }
 
 h2, .h2 {
@@ -90,19 +94,30 @@ h3 {
   font-size: 1.25rem;
 }
 
-p, p {
+p, .p {
   font-size: 1rem;
 }
 
+/* containers */
 .container {
   width: 81rem;
   margin: 0 auto;
+}
+
+.banner-description {
+  width: 39.75rem;
+}
+
+/* font */
+.text-end {
+  text-align: right;
 }
 
 .text-dark {
   color: #000000;
 }
 
+/* flex */
 .d-flex {
   display: flex;
 }
@@ -111,10 +126,15 @@ p, p {
   justify-content: space-between;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
+/* spacing */
 .mt-2_5 {
   margin-top: 2.5rem;
 }
@@ -136,4 +156,28 @@ p, p {
 .my-10 {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+.btn, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.btn img, .btn-dark img, .btn-light img {
+  display: inline;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.banner {
+  justify-content: space-between;
 }/*# sourceMappingURL=all.css.map */
