@@ -118,10 +118,17 @@ p, .p {
 
 .about-card-box {
   width: 39.75rem;
+  height: 20.25rem;
 }
 
 .about-card {
-  width: 17.125rem;
+  width: 19.125rem;
+  height: 9.25rem;
+  padding: 16px;
+}
+
+.about-description {
+  width: 32.875rem;
 }
 
 /* font */
@@ -161,6 +168,10 @@ p, .p {
 
 .mb-0_25 {
   margin-bottom: 0.25rem;
+}
+
+.mb-2_25 {
+  margin-bottom: 2.25rem;
 }
 
 .mb-2_5 {
@@ -212,6 +223,11 @@ p, .p {
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+
+.about-card {
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 .introduction {
