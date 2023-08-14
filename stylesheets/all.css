@@ -175,6 +175,14 @@ p, .p {
   align-items: center;
 }
 
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
