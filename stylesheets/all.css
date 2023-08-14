@@ -55,7 +55,6 @@ table {
 
 *, *:before, *:after {
   box-sizing: border-box;
-  outline: solid 1px grey; /*檢查用，繳交前需清掉*/
 }
 
 body {
@@ -108,32 +107,47 @@ p, .p {
   margin: 0 auto;
 }
 
-.banner-description {
+.banner-description, .about-card-box, .project-album-text {
   width: 39.75rem;
 }
 
-.introduction-description {
+.introduction-description, .contact-icon-list {
   width: 32.875rem;
 }
 
 .about-card-box {
-  width: 39.75rem;
   height: 20.25rem;
 }
 
 .about-card {
   width: 19.125rem;
   height: 9.25rem;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .about-description {
   width: 32.875rem;
 }
 
+.project-title {
+  width: 46.625rem;
+}
+
+.project-album-list {
+  width: 53.5rem;
+}
+
+.project-album-description {
+  height: 12.25rem;
+}
+
 /* font */
 .text-end {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-dark {
@@ -145,8 +159,12 @@ p, .p {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-content-end {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .justify-content-between {
@@ -162,12 +180,20 @@ p, .p {
 }
 
 /* spacing */
+.ms-auto {
+  margin-left: auto;
+}
+
 .mt-2_5 {
   margin-top: 2.5rem;
 }
 
 .mb-0_25 {
   margin-bottom: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .mb-2_25 {
@@ -178,7 +204,7 @@ p, .p {
   margin-bottom: 2.5rem;
 }
 
-.mr-1 {
+.me-1 {
   margin-right: 1rem;
 }
 
@@ -195,6 +221,16 @@ p, .p {
 .my-6 {
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.py-2_5 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-10 {
@@ -230,6 +266,39 @@ p, .p {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
+.nav a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.25rem;
+  background-color: #00FFA3; /* 設定底線顏色 */
+  transition: width 0.3s ease; /* 設定動畫效果 */
+}
+.nav a:hover::before {
+  width: 100%; /* 底線滑動出現的寬度 */
+}
+
 .introduction {
   background: url(../image/background-img.png);
+}
+
+.contact img, .contact h2 {
+  display: inline-block;
+}
+.contact .contact-icon-list a {
+  border-radius: 40px;
+}
+.contact .contact-icon-list a:hover {
+  filter: drop-shadow(0px 0px 16px rgba(144, 148, 255, 0.9));
+}
+
+.project img:not(:last-child) {
+  margin-right: 1rem;
 }/*# sourceMappingURL=all.css.map */

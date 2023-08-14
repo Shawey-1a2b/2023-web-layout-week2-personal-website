@@ -1,3 +1,41 @@
+.nav{
+    a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.25rem;
+            background-color: $green; /* 設定底線顏色 */
+            transition: width 0.3s ease; /* 設定動畫效果 */
+        }
+        &:hover::before {
+            width: 100%; /* 底線滑動出現的寬度 */
+        }
+    }
+}
 .introduction{
     background: url(../image/background-img.png);
+}
+.contact{
+    img, h2{
+        display: inline-block;
+    }
+    & .contact-icon-list{
+        a{
+            border-radius: 40px;
+            &:hover{
+                filter: drop-shadow(0px 0px 16px rgba(144, 148, 255, 0.90));
+            }
+        }
+    }
+}
+.project{
+    img:not(:last-child){
+        margin-right: 1rem;
+    }
 }

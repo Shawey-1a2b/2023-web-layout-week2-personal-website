@@ -1,6 +1,6 @@
 *, *:before, *:after{
     box-sizing: border-box;
-    outline: solid 1px grey; /*檢查用，繳交前需清掉*/
+    // outline: solid 1px grey; /*檢查用，繳交前需清掉*/
 }
 body {
     font-family: Bruno Ace SC;
@@ -43,27 +43,38 @@ p, .p {
     width: 81rem;
     margin: 0 auto;
 }
-.banner-description{
+.banner-description, .about-card-box, .project-album-text{
     width: 39.75rem;
 }
-.introduction-description{
+.introduction-description, .contact-icon-list{
     width: 32.875rem;
 }
 .about-card-box{
-    width: 39.75rem;
     height: 20.25rem;
 }
 .about-card{
     width: 19.125rem;
     height: 9.25rem;
-    padding: 16px;
+    padding: 1rem;
 }
 .about-description{
     width: 32.875rem;
 }
+.project-title{
+    width: 46.625rem;
+}
+.project-album-list{
+    width: 53.5rem;
+}
+.project-album-description{
+    height: 12.25rem;
+}
 /* font */
 .text-end{
     text-align: right;
+}
+.text-center{
+    text-align: center;
 }
 .text-dark{
     color: $secondary;

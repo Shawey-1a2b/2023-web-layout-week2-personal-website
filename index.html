@@ -15,7 +15,7 @@
             <li>WILLIAM LEE</li>
             <li>BASED IN TAIWAN</li>
             <li>CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
-            <li><a href="">CONTACT ME</a></li>
+            <li><a href="#contactme">CONTACT ME</a></li>
         </ul>
     </div>
     <div class="banner">
@@ -26,7 +26,7 @@
                 <p class="h2">I’m a front-end developer</p>
                 <h1 class="text-end">William</h1>
 <!-- 　　待解決ｂｔｎ無法置右問題 -->
-                <p class="btn-light d-flex justify-content-end">contact me<img src="./image/arrow_outward.png"></p>
+                <p class="btn-light ms-auto">contact me<img src="./image/arrow_outward.png"></p>
             </div>
         </div>
     </div>
@@ -34,11 +34,11 @@
         <div class="container py-10 d-flex  justify-content-between">
             <div class="introduction-description">
                 <h2 class="mb-0_25">Introduction</h2>
-                <p class="fs1 my-2">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+                <p class="fs-1 my-2">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
                 <div class="introduction-deco-sparkle d-flex">
-                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
-                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
-                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="mr-1">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="me-1">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="me-1">
+                    <img src="/image/sparkle-sm.png" alt="sparkle decoration" class="me-1">
                 </div>
             </div>
 <!--　　待解決圖片ａ連結產生邊距問題  -->
@@ -80,11 +80,13 @@
             </div>
         </div>
     </div>
-    <div class="contact">
-        <div class="container">
-            <h2>CONTACT ME</h2>
-            <img src="./image/trending_flat_black_24dp 1.png" alt="please check here">
-            <ul class="contact-icon-list">
+    <div class="contact" id="contactme">
+        <div class="container py-6 d-flex justify-content-between align-items-center">
+            <div class="contact-description d-flex justify-content-between">
+                <h2 class="me-1">CONTACT ME</h2>
+                <img src="./image/trending_flat_black_24dp 1.png" alt="please check here">
+            </div>
+            <ul class="contact-icon-list d-flex justify-content-between">
                 <li><a href="https://discord.com/" target="_blank"><img src="./image/discord.png" alt="discord"></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><img src="./image/instagram.png" alt="instagram"></a></li>
                 <li><a href="https://www.messenger.com/" target="_blank"><img src="./image/message.png" alt="message"></a></li>
@@ -92,22 +94,27 @@
         </div>
     </div>
     <div class="project light-theme">
-        <div class="container">
-            <h2>My Projects</h2>
-            <img src="./image/Rectangle 10.png" alt="my project work no.10">
-            <div class="project-album">
-                <img src="./image/Rectangle 15.png" alt="my project work no.15">
-                <div class="project-album-description">
-                    <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-                    <p class="projects-more-btn">SEE MORE<img src="./image/arrow_outward-white.png" alt="check here"></div>
+        <div class="container py-10">
+            <h2 class="project-title mb-1 ms-auto">My Projects</h2>
+            <div class="project-album d-flex justify-content-between">
+                <img src="./image/Rectangle 10.png" alt="my project work no.10">
+                <div class="project-album-list d-flex flex-wrap">
+                    <div class="project-album-description d-flex justify-content-between">
+                        <img src="./image/Rectangle 15.png" alt="my project work no.15">
+                        <div class="project-album-text">
+                            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+<!-- 　　　　待解決ｂｔｎ無法靠下的問題 -->
+                            <p class="btn-dark mt-auto">SEE MORE<img src="./image/arrow_outward-white.png" alt="check here">
+                        </div>
+                    </div>
+                    <img src="./image/Rectangle 14.png" alt="my project work no.14">
+                    <img src="./image/Rectangle 29.png" alt="my project work no.29">
                 </div>
-            </div>
-            <img src="./image/Rectangle 14.png" alt="my project work no.14">
-            <img src="./image/Rectangle 29.png" alt="my project work no.29">
+                </div>
             </div>
     </div>
     <div class="footer">
-        <p>all rights reserved @hexschool2023</p>
+        <p class="text-center py-2_5">all rights reserved @hexschool2023</p>
     </div>
 </body>
 </html>
